@@ -141,7 +141,7 @@ class WoZaiXiaoYuanPuncher:
         else:
             answers='["0"]'
         sign_data = {
-            "answers":os.environ['WZXY_ANSWER2'],
+            "answers": os.environ['WZXY_ANSWER2'],
             "seq": str(seq),
             "temperature": utils.getRandomTemperature(os.environ['WZXY_TEMPERATURE']),
             "latitude": os.environ['WZXY_LATITUDE'],
