@@ -97,7 +97,7 @@ class WoZaiXiaoYuanPuncher:
         else:
             answers='["0","1","1"]'
         sign_data = {
-            "answers": answers,
+            "answers": os.environ['WZXY_ANSWER'],
             "latitude": os.environ['WZXY_LATITUDE'],
             "longitude": os.environ['WZXY_LONGITUDE'],
             "country": os.environ['WZXY_COUNTRY'],
