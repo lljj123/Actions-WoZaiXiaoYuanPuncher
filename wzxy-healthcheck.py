@@ -95,9 +95,9 @@ class WoZaiXiaoYuanPuncher:
                     input[i] = utils.getRandomTemperature()
             answers=json.dumps(input,ensure_ascii=False,separators=(',',':'))
         else:
-            answers='["0","1","1"]'
+            answers='["0","36.0","0","0","0","6个月","0","1","1"]'
         sign_data = {
-            "answers": os.environ['WZXY_ANSWER'],
+            "answers": answers,
             "latitude": os.environ['WZXY_LATITUDE'],
             "longitude": os.environ['WZXY_LONGITUDE'],
             "country": os.environ['WZXY_COUNTRY'],
